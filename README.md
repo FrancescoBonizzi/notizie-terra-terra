@@ -1,6 +1,6 @@
 # Repository del sito ufficiale di Notizie Terra Terra
 
-![Notizie Terra Terra Logo](/assets/images/Notizie-Terra-Terra.png)
+![Notizie Terra Terra Logo](/assets/images/Notizie-Terra-Terra-Logo.png)
 
 Benvenuti nel repository ufficiale del [sito di Notizie Terra Terra](https://notizieterraterra.it), il canale TikTok che offre qualche angolatura diversa e imprevista sulla quotidianità. 
 
