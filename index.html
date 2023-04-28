@@ -1,78 +1,32 @@
-<!DOCTYPE html>
+---
+layout: skeleton
+permalink: /
 
-<html lang="it" dir="ltr">
-    <head>
-        <meta charset="utf-8" />
+metaTitle:
+metaDescription: Notizie Terra Terra è un canale TikTok che si propone di offrire una visione originale e alternativa della realtà che ci circonda, fornendo qualche angolatura diversa e imprevista
 
-        <!-- MAKE IT RESPONSIVE, YEAH! -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+ogImage: '/assets/images/Notizie-Terra-Terra-Logo.png'
+---
 
-        <!-- FAVICON -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/assets/favicon/site.webmanifest">
-        <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#49eafa">
-        <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
-        <meta name="msapplication-TileColor" content="#49eafa">
-        <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
-        <meta name="theme-color" content="#49eafa">
+{% for singleNews in site.news %}
 
-        <!-- SEO -->
-        <title>Notizie Terra Terra</title>
-        <meta
-            name="description"
-            content="Notizie Terra Terra è un canale TikTok che si propone di offrire una visione originale e alternativa della realtà che ci circonda, fornendo qualche angolatura diversa e imprevista."
+<article>
+    <div class="img-text-container">
+        <img
+            src="./assets/images/{{ singleNews.imageName }}"
+            alt="Immagine di anteprima del video TikTok di Notizie Terra Terra intitolato: {{ singleNews.title }}"
         />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Notizie Terra Terra" />
-        <meta
-            property="og:description"
-            content="Notizie Terra Terra è un canale TikTok che si propone di offrire una visione originale e alternativa della realtà che ci circonda, fornendo qualche angolatura diversa e imprevista."
-        />
-        <meta property="og:site_name" content="Notizie Terra Terra" />
-        <meta property="og:locale" content="it_IT" />
-        <meta property="og:image" content="https://notizieterraterra.it/assets/images/Notizie-Terra-Terra-Logo.png" />
-        <meta property="og:url" content="https://notizieterraterra.it"/>
-        
-        <meta name="author" content="Francesco Bonizzi" />
+        <div>{{ singleNews.content }}</div>
+    </div>
+    
+    <hr />
 
-        <link rel="canonical" href="https://notizieterraterra.it" />
+    <a
+        class="primary-button"
+        title="Guarda subito il video TikTok di Notizie Terra Terra intitolato: {{ singleNews.title }}"
+        href="{{ singleNews.link }}"
+        >Guarda subito</a
+    >
+</article>
 
-        <!-- FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@400;700&display=swap" rel="stylesheet">
-        <!-- STYLESHEETS -->
-        <link href="./assets/css/style.css" rel="stylesheet" />
-    </head>
-
-    <body>
-        <header>
-            <h1>Notizie Terra Terra</h1>
-            <h2>Qualche angolatura diversa e imprevista</h2>
-        </header>
-
-        <main>
-            <blockquote
-                class="tiktok-embed"
-                cite="https://www.tiktok.com/@notizie_terra_terra"
-                data-unique-id="notizie_terra_terra"
-                data-embed-type="creator"
-                style="max-width: 780px; min-width: 288px"
-            >
-                <section>
-                    <a target="_blank" href="https://www.tiktok.com/@notizie_terra_terra?refer=creator_embed"
-                        >@notizie_terra_terra</a
-                    >
-                </section>
-            </blockquote>
-            <script async src="https://www.tiktok.com/embed.js"></script>
-        </main>
-
-        <footer>
-            <p>&copy; 2023 - Notizie Terra Terra</p>
-            <p>Il sito ufficiale del <a href="https://www.tiktok.com/@notizie_terra_terra" alt="Il sito ufficiale del canale TikTok Notizie Terra Terra" title="Apri il canale Notizie Terra Terra su TikTok">canale TikTok</a></p>
-        </footer>
-    </body>
-</html>
+{% endfor %}
