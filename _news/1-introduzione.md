@@ -1,6 +1,6 @@
 ---
 title: Introduzione
-date: 07-04-2023
+date: 2023-04-07
 link: https://www.tiktok.com/@notizie_terra_terra/video/7219408373039582469
 imageName: 1-introduzione.jpeg
 ---
