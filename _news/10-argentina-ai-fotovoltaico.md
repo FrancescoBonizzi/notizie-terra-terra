@@ -13,4 +13,4 @@ Spoiler: il governo é in ritardo 🤓
 
 **#fotovoltaico** **#rinnovabili** **#tecnologia** **#machinelearning** **#nacion**
 
-Fonti: https://www.lanacion.com.ar/tecnologia/inteligencia-artificial-m
+[Fonte](https://www.lanacion.com.ar/tecnologia/inteligencia-artificial-mapear-parques-solares-argentina-nid2370879)
